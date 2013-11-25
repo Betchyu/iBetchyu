@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -16,7 +17,12 @@
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
+@property (strong, nonatomic) UINavigationController* navController;
+@property (strong, nonatomic) ViewController *mainViewController;
+
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
+- (void)showLoginView;
+- (void)openSession;
 
 @end

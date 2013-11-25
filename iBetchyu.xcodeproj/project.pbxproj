@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89D1EFBD183D095000AC1DA7 /* BigButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D1EFBC183D095000AC1DA7 /* BigButton.m */; };
+		89D1EFDC183D3D9A00AC1DA7 /* BetTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D1EFDA183D3D9A00AC1DA7 /* BetTypeViewController.m */; };
+		89E40317183D632700E072DA /* BetDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E40316183D632700E072DA /* BetDetailsVC.m */; };
+		89E4031A1842A3EF00E072DA /* BetStakeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E403191842A3EF00E072DA /* BetStakeVC.m */; };
+		89E4031C1842AFDD00E072DA /* Beer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89E4031B1842AFDD00E072DA /* Beer.jpg */; };
+		89E4031E1842B16500E072DA /* Amazon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89E4031D1842B16500E072DA /* Amazon.jpg */; };
+		89E403241842BC3C00E072DA /* BetStakeConfirmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E403231842BC3C00E072DA /* BetStakeConfirmVC.m */; };
+		89E403271842BDF200E072DA /* Bet.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E403261842BDF200E072DA /* Bet.m */; };
+		89E4032A1842C80700E072DA /* TempBet.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E403291842C80700E072DA /* TempBet.m */; };
 		89ED55C41837CB7D009FBF54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89ED55C31837CB7D009FBF54 /* Foundation.framework */; };
 		89ED55C61837CB7D009FBF54 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89ED55C51837CB7D009FBF54 /* CoreGraphics.framework */; };
 		89ED55C81837CB7D009FBF54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89ED55C71837CB7D009FBF54 /* UIKit.framework */; };
@@ -20,8 +29,10 @@
 		89ED55E31837CB7D009FBF54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89ED55C31837CB7D009FBF54 /* Foundation.framework */; };
 		89ED55E41837CB7D009FBF54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89ED55C71837CB7D009FBF54 /* UIKit.framework */; };
 		89ED55E51837CB7D009FBF54 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89ED55C91837CB7D009FBF54 /* CoreData.framework */; };
-		89ED55ED1837CB7D009FBF54 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89ED55EB1837CB7D009FBF54 /* InfoPlist.strings */; };
-		89ED55EF1837CB7D009FBF54 /* iBetchyuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ED55EE1837CB7D009FBF54 /* iBetchyuTests.m */; };
+		89ED55F91837CBD4009FBF54 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89ED55F81837CBD4009FBF54 /* FacebookSDK.framework */; };
+		89ED55FD1837CC82009FBF54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ED55FB1837CC82009FBF54 /* ViewController.m */; };
+		89ED56041837CD59009FBF54 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ED56021837CD59009FBF54 /* LoginViewController.m */; };
+		89ED56051837CD59009FBF54 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89ED56031837CD59009FBF54 /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +46,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		89D1EFBB183D095000AC1DA7 /* BigButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigButton.h; sourceTree = "<group>"; };
+		89D1EFBC183D095000AC1DA7 /* BigButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigButton.m; sourceTree = "<group>"; };
+		89D1EFD9183D3D9A00AC1DA7 /* BetTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetTypeViewController.h; sourceTree = "<group>"; };
+		89D1EFDA183D3D9A00AC1DA7 /* BetTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetTypeViewController.m; sourceTree = "<group>"; };
+		89E40315183D632700E072DA /* BetDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BetDetailsVC.h; path = ../BetDetailsVC.h; sourceTree = "<group>"; };
+		89E40316183D632700E072DA /* BetDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BetDetailsVC.m; path = ../BetDetailsVC.m; sourceTree = "<group>"; };
+		89E403181842A3EF00E072DA /* BetStakeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetStakeVC.h; sourceTree = "<group>"; };
+		89E403191842A3EF00E072DA /* BetStakeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetStakeVC.m; sourceTree = "<group>"; };
+		89E4031B1842AFDD00E072DA /* Beer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Beer.jpg; path = ../../../Desktop/Beer.jpg; sourceTree = "<group>"; };
+		89E4031D1842B16500E072DA /* Amazon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Amazon.jpg; path = ../../../Desktop/Amazon.jpg; sourceTree = "<group>"; };
+		89E403221842BC3C00E072DA /* BetStakeConfirmVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BetStakeConfirmVC.h; path = ../BetStakeConfirmVC.h; sourceTree = "<group>"; };
+		89E403231842BC3C00E072DA /* BetStakeConfirmVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BetStakeConfirmVC.m; path = ../BetStakeConfirmVC.m; sourceTree = "<group>"; };
+		89E403251842BDF200E072DA /* Bet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bet.h; sourceTree = "<group>"; };
+		89E403261842BDF200E072DA /* Bet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bet.m; sourceTree = "<group>"; };
+		89E403281842C80700E072DA /* TempBet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempBet.h; sourceTree = "<group>"; };
+		89E403291842C80700E072DA /* TempBet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempBet.m; sourceTree = "<group>"; };
 		89ED55C01837CB7D009FBF54 /* iBetchyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBetchyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89ED55C31837CB7D009FBF54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		89ED55C51837CB7D009FBF54 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -50,9 +77,12 @@
 		89ED55DA1837CB7D009FBF54 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		89ED55E01837CB7D009FBF54 /* iBetchyuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBetchyuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89ED55E11837CB7D009FBF54 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		89ED55EA1837CB7D009FBF54 /* iBetchyuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBetchyuTests-Info.plist"; sourceTree = "<group>"; };
-		89ED55EC1837CB7D009FBF54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		89ED55EE1837CB7D009FBF54 /* iBetchyuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBetchyuTests.m; sourceTree = "<group>"; };
+		89ED55F81837CBD4009FBF54 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		89ED55FA1837CC82009FBF54 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		89ED55FB1837CC82009FBF54 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
+		89ED56011837CD59009FBF54 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		89ED56021837CD59009FBF54 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		89ED56031837CD59009FBF54 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +91,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89ED55C61837CB7D009FBF54 /* CoreGraphics.framework in Frameworks */,
+				89ED55F91837CBD4009FBF54 /* FacebookSDK.framework in Frameworks */,
 				89ED55CA1837CB7D009FBF54 /* CoreData.framework in Frameworks */,
 				89ED55C81837CB7D009FBF54 /* UIKit.framework in Frameworks */,
 				89ED55C41837CB7D009FBF54 /* Foundation.framework in Frameworks */,
@@ -81,11 +112,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89D1EFBA183CFD4C00AC1DA7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				89E403221842BC3C00E072DA /* BetStakeConfirmVC.h */,
+				89E403231842BC3C00E072DA /* BetStakeConfirmVC.m */,
+				89E403181842A3EF00E072DA /* BetStakeVC.h */,
+				89E403191842A3EF00E072DA /* BetStakeVC.m */,
+				89E40315183D632700E072DA /* BetDetailsVC.h */,
+				89E40316183D632700E072DA /* BetDetailsVC.m */,
+				89D1EFD9183D3D9A00AC1DA7 /* BetTypeViewController.h */,
+				89D1EFDA183D3D9A00AC1DA7 /* BetTypeViewController.m */,
+				89ED56011837CD59009FBF54 /* LoginViewController.h */,
+				89ED56021837CD59009FBF54 /* LoginViewController.m */,
+				89ED55FA1837CC82009FBF54 /* ViewController.h */,
+				89ED55FB1837CC82009FBF54 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		89ED55B71837CB7D009FBF54 = {
 			isa = PBXGroup;
 			children = (
 				89ED55CB1837CB7D009FBF54 /* iBetchyu */,
-				89ED55E81837CB7D009FBF54 /* iBetchyuTests */,
 				89ED55C21837CB7D009FBF54 /* Frameworks */,
 				89ED55C11837CB7D009FBF54 /* Products */,
 			);
@@ -103,6 +152,7 @@
 		89ED55C21837CB7D009FBF54 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				89ED55F81837CBD4009FBF54 /* FacebookSDK.framework */,
 				89ED55C31837CB7D009FBF54 /* Foundation.framework */,
 				89ED55C51837CB7D009FBF54 /* CoreGraphics.framework */,
 				89ED55C71837CB7D009FBF54 /* UIKit.framework */,
@@ -115,10 +165,12 @@
 		89ED55CB1837CB7D009FBF54 /* iBetchyu */ = {
 			isa = PBXGroup;
 			children = (
+				89D1EFBA183CFD4C00AC1DA7 /* Controllers */,
+				89ED56001837CCA7009FBF54 /* Models */,
+				89ED55FF1837CC8E009FBF54 /* Views */,
 				89ED55D41837CB7D009FBF54 /* AppDelegate.h */,
 				89ED55D51837CB7D009FBF54 /* AppDelegate.m */,
 				89ED55DA1837CB7D009FBF54 /* Images.xcassets */,
-				89ED55D71837CB7D009FBF54 /* iBetchyu.xcdatamodeld */,
 				89ED55CC1837CB7D009FBF54 /* Supporting Files */,
 			);
 			path = iBetchyu;
@@ -135,22 +187,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		89ED55E81837CB7D009FBF54 /* iBetchyuTests */ = {
+		89ED55FF1837CC8E009FBF54 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				89ED55EE1837CB7D009FBF54 /* iBetchyuTests.m */,
-				89ED55E91837CB7D009FBF54 /* Supporting Files */,
+				89E4031D1842B16500E072DA /* Amazon.jpg */,
+				89E4031B1842AFDD00E072DA /* Beer.jpg */,
+				89ED56031837CD59009FBF54 /* LoginViewController.xib */,
+				89D1EFBB183D095000AC1DA7 /* BigButton.h */,
+				89D1EFBC183D095000AC1DA7 /* BigButton.m */,
 			);
-			path = iBetchyuTests;
+			name = Views;
 			sourceTree = "<group>";
 		};
-		89ED55E91837CB7D009FBF54 /* Supporting Files */ = {
+		89ED56001837CCA7009FBF54 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				89ED55EA1837CB7D009FBF54 /* iBetchyuTests-Info.plist */,
-				89ED55EB1837CB7D009FBF54 /* InfoPlist.strings */,
+				89E403281842C80700E072DA /* TempBet.h */,
+				89E403291842C80700E072DA /* TempBet.m */,
+				89ED55D71837CB7D009FBF54 /* iBetchyu.xcdatamodeld */,
+				89E403251842BDF200E072DA /* Bet.h */,
+				89E403261842BDF200E072DA /* Bet.m */,
 			);
-			name = "Supporting Files";
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +286,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89ED56051837CD59009FBF54 /* LoginViewController.xib in Resources */,
+				89E4031C1842AFDD00E072DA /* Beer.jpg in Resources */,
+				89E4031E1842B16500E072DA /* Amazon.jpg in Resources */,
 				89ED55D01837CB7D009FBF54 /* InfoPlist.strings in Resources */,
 				89ED55DB1837CB7D009FBF54 /* Images.xcassets in Resources */,
 			);
@@ -237,7 +298,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89ED55ED1837CB7D009FBF54 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,9 +308,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E403271842BDF200E072DA /* Bet.m in Sources */,
 				89ED55D91837CB7D009FBF54 /* iBetchyu.xcdatamodeld in Sources */,
 				89ED55D61837CB7D009FBF54 /* AppDelegate.m in Sources */,
+				89E40317183D632700E072DA /* BetDetailsVC.m in Sources */,
+				89ED55FD1837CC82009FBF54 /* ViewController.m in Sources */,
+				89E403241842BC3C00E072DA /* BetStakeConfirmVC.m in Sources */,
+				89D1EFDC183D3D9A00AC1DA7 /* BetTypeViewController.m in Sources */,
 				89ED55D21837CB7D009FBF54 /* main.m in Sources */,
+				89D1EFBD183D095000AC1DA7 /* BigButton.m in Sources */,
+				89E4032A1842C80700E072DA /* TempBet.m in Sources */,
+				89ED56041837CD59009FBF54 /* LoginViewController.m in Sources */,
+				89E4031A1842A3EF00E072DA /* BetStakeVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +327,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89ED55EF1837CB7D009FBF54 /* iBetchyuTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,14 +345,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				89ED55CF1837CB7D009FBF54 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		89ED55EB1837CB7D009FBF54 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				89ED55EC1837CB7D009FBF54 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -371,6 +431,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Betchyu/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBetchyu/iBetchyu-Prefix.pch";
 				INFOPLIST_FILE = "iBetchyu/iBetchyu-Info.plist";
@@ -384,6 +448,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Betchyu/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBetchyu/iBetchyu-Prefix.pch";
 				INFOPLIST_FILE = "iBetchyu/iBetchyu-Info.plist";
@@ -453,6 +521,7 @@
 				89ED55F41837CB7D009FBF54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89ED55F51837CB7D009FBF54 /* Build configuration list for PBXNativeTarget "iBetchyuTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +530,7 @@
 				89ED55F71837CB7D009FBF54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
