@@ -25,8 +25,8 @@
     if (self) {
         // Custom initialization
         bet = [TempBet new];
-        bet.betVerb = [[verbName componentsSeparatedByString:@" "] objectAtIndex:0];
-        bet.betNoun = [[verbName componentsSeparatedByString:@" "] objectAtIndex:1];
+        bet.betVerb = [[verbName componentsSeparatedByString:@" "] objectAtIndex:0]; //first word passed
+        bet.betNoun = [[verbName componentsSeparatedByString:@" "] objectAtIndex:1]; // second word
         if ([bet.betNoun isEqualToString:@"Weight"]) {
             bet.betNoun = @"pounds";
         } else if ([bet.betNoun isEqualToString:@"Money"]){
@@ -37,6 +37,8 @@
             } else {
                 bet.betNoun = @"miles";
             }
+        } else if ([bet.betNoun isEqualToString:@"Less"]){
+            bet.betNoun = @"less calories";
         }
     }
     return self;

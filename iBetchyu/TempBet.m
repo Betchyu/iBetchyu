@@ -15,6 +15,7 @@
 @synthesize betVerb;
 @synthesize createdAt;
 @synthesize endDate;
+@synthesize friends;
 @synthesize opponentStakeAmount;
 @synthesize opponentStakeType;
 @synthesize ownStakeAmount;

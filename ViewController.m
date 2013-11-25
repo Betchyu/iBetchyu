@@ -62,7 +62,7 @@
          forControlEvents:UIControlEventTouchUpInside];
     [mainView addSubview:createGoal];
     
-    self.view       = mainView;
+    self.view = mainView;
 }
 
 - (void)viewDidLoad

@@ -15,6 +15,7 @@
 @property (nonatomic, retain) NSString * betVerb;
 @property (nonatomic, retain) NSDate * createdAt;
 @property (nonatomic, retain) NSDate * endDate;
+@property (nonatomic, retain) NSArray * friends;
 @property (nonatomic, retain) NSNumber * opponentStakeAmount;
 @property (nonatomic, retain) NSString * opponentStakeType;
 @property (nonatomic, retain) NSNumber * ownStakeAmount;

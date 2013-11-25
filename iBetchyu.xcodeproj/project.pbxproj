@@ -16,6 +16,8 @@
 		89E403241842BC3C00E072DA /* BetStakeConfirmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E403231842BC3C00E072DA /* BetStakeConfirmVC.m */; };
 		89E403271842BDF200E072DA /* Bet.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E403261842BDF200E072DA /* Bet.m */; };
 		89E4032A1842C80700E072DA /* TempBet.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E403291842C80700E072DA /* TempBet.m */; };
+		89E4032D1843EE9400E072DA /* BetFinalizeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E4032C1843EE9400E072DA /* BetFinalizeVC.m */; };
+		89E4032F1843F05E00E072DA /* handshake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89E4032E1843F05E00E072DA /* handshake.jpg */; };
 		89ED55C41837CB7D009FBF54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89ED55C31837CB7D009FBF54 /* Foundation.framework */; };
 		89ED55C61837CB7D009FBF54 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89ED55C51837CB7D009FBF54 /* CoreGraphics.framework */; };
 		89ED55C81837CB7D009FBF54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89ED55C71837CB7D009FBF54 /* UIKit.framework */; };
@@ -62,6 +64,9 @@
 		89E403261842BDF200E072DA /* Bet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bet.m; sourceTree = "<group>"; };
 		89E403281842C80700E072DA /* TempBet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempBet.h; sourceTree = "<group>"; };
 		89E403291842C80700E072DA /* TempBet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempBet.m; sourceTree = "<group>"; };
+		89E4032B1843EE9400E072DA /* BetFinalizeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetFinalizeVC.h; sourceTree = "<group>"; };
+		89E4032C1843EE9400E072DA /* BetFinalizeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetFinalizeVC.m; sourceTree = "<group>"; };
+		89E4032E1843F05E00E072DA /* handshake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = handshake.jpg; path = ../../../Desktop/handshake.jpg; sourceTree = "<group>"; };
 		89ED55C01837CB7D009FBF54 /* iBetchyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBetchyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89ED55C31837CB7D009FBF54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		89ED55C51837CB7D009FBF54 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,6 +120,30 @@
 		89D1EFBA183CFD4C00AC1DA7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				89E403311843FB7800E072DA /* CreateGoalFlow */,
+				89ED56011837CD59009FBF54 /* LoginViewController.h */,
+				89ED56021837CD59009FBF54 /* LoginViewController.m */,
+				89ED55FA1837CC82009FBF54 /* ViewController.h */,
+				89ED55FB1837CC82009FBF54 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		89E403301843F06C00E072DA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				89E4032E1843F05E00E072DA /* handshake.jpg */,
+				89E4031D1842B16500E072DA /* Amazon.jpg */,
+				89E4031B1842AFDD00E072DA /* Beer.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		89E403311843FB7800E072DA /* CreateGoalFlow */ = {
+			isa = PBXGroup;
+			children = (
+				89E4032B1843EE9400E072DA /* BetFinalizeVC.h */,
+				89E4032C1843EE9400E072DA /* BetFinalizeVC.m */,
 				89E403221842BC3C00E072DA /* BetStakeConfirmVC.h */,
 				89E403231842BC3C00E072DA /* BetStakeConfirmVC.m */,
 				89E403181842A3EF00E072DA /* BetStakeVC.h */,
@@ -123,12 +152,8 @@
 				89E40316183D632700E072DA /* BetDetailsVC.m */,
 				89D1EFD9183D3D9A00AC1DA7 /* BetTypeViewController.h */,
 				89D1EFDA183D3D9A00AC1DA7 /* BetTypeViewController.m */,
-				89ED56011837CD59009FBF54 /* LoginViewController.h */,
-				89ED56021837CD59009FBF54 /* LoginViewController.m */,
-				89ED55FA1837CC82009FBF54 /* ViewController.h */,
-				89ED55FB1837CC82009FBF54 /* ViewController.m */,
 			);
-			name = Controllers;
+			name = CreateGoalFlow;
 			sourceTree = "<group>";
 		};
 		89ED55B71837CB7D009FBF54 = {
@@ -165,6 +190,7 @@
 		89ED55CB1837CB7D009FBF54 /* iBetchyu */ = {
 			isa = PBXGroup;
 			children = (
+				89E403301843F06C00E072DA /* Images */,
 				89D1EFBA183CFD4C00AC1DA7 /* Controllers */,
 				89ED56001837CCA7009FBF54 /* Models */,
 				89ED55FF1837CC8E009FBF54 /* Views */,
@@ -190,8 +216,6 @@
 		89ED55FF1837CC8E009FBF54 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				89E4031D1842B16500E072DA /* Amazon.jpg */,
-				89E4031B1842AFDD00E072DA /* Beer.jpg */,
 				89ED56031837CD59009FBF54 /* LoginViewController.xib */,
 				89D1EFBB183D095000AC1DA7 /* BigButton.h */,
 				89D1EFBC183D095000AC1DA7 /* BigButton.m */,
@@ -291,6 +315,7 @@
 				89E4031E1842B16500E072DA /* Amazon.jpg in Resources */,
 				89ED55D01837CB7D009FBF54 /* InfoPlist.strings in Resources */,
 				89ED55DB1837CB7D009FBF54 /* Images.xcassets in Resources */,
+				89E4032F1843F05E00E072DA /* handshake.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +337,7 @@
 				89ED55D91837CB7D009FBF54 /* iBetchyu.xcdatamodeld in Sources */,
 				89ED55D61837CB7D009FBF54 /* AppDelegate.m in Sources */,
 				89E40317183D632700E072DA /* BetDetailsVC.m in Sources */,
+				89E4032D1843EE9400E072DA /* BetFinalizeVC.m in Sources */,
 				89ED55FD1837CC82009FBF54 /* ViewController.m in Sources */,
 				89E403241842BC3C00E072DA /* BetStakeConfirmVC.m in Sources */,
 				89D1EFDC183D3D9A00AC1DA7 /* BetTypeViewController.m in Sources */,
