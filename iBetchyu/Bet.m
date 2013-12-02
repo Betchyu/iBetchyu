@@ -21,5 +21,6 @@
 @dynamic ownStakeAmount;
 @dynamic ownStakeType;
 @dynamic owner;
+@dynamic opponent;
 
 @end

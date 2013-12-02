@@ -11,9 +11,10 @@
 #import "TempBet.h"
 #import "BigButton.h"
 
-@interface BetFinalizeVC : UIViewController
+@interface BetFinalizeVC : UIViewController 
 
 @property (strong) TempBet * bet;
+@property NSManagedObjectContext * managedObjectContext;
 
 -(id)initWithBet:(TempBet *)betObj;
 -(void)betchyu:(id)sender;

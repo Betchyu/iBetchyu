@@ -7,19 +7,25 @@
 //
 
 #import "BetFinalizeVC.h"
+#import "AppDelegate.h"
+#import "Bet.h"
 
-@interface BetFinalizeVC ()
+@interface BetFinalizeVC () <NSFetchedResultsControllerDelegate>
+    @property NSFetchedResultsController * fetchedResultsController;
 @end
 
 @implementation BetFinalizeVC
 
 @synthesize bet;
+@synthesize managedObjectContext;
 
 - (id)initWithBet:(TempBet *)betObj {
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
         // Custom initialization
         self.bet = betObj;
+        AppDelegate *appDelegate = (AppDelegate *)([[UIApplication sharedApplication] delegate]);
+        self.managedObjectContext = appDelegate.managedObjectContext;
     }
     return self;
 }
@@ -62,7 +68,6 @@
     [mainView addSubview:shake];    // add the handshake image first, so it is under the other stuff
     [mainView addSubview:betDescription];
     [mainView addSubview:stakeDescription];
-    
 
     // FBProfilePictureView setups
     if (FBSession.activeSession.isOpen) {
@@ -122,6 +127,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    /*NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Bet"];
+    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"completedAt" ascending:NO]];
+    
+    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    self.fetchedResultsController.delegate = self;
+    [self.fetchedResultsController performFetch:nil];*/
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -130,7 +141,43 @@
 
 - (void) betchyu:(id)sender {
     // TODO: save the bet on the server
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    Bet *newBet = [NSEntityDescription insertNewObjectForEntityForName:@"Bet" inManagedObjectContext:self.managedObjectContext];
+
+    newBet.betAmount = bet.betAmount;
+    newBet.betNoun = bet.betNoun;
+    newBet.betVerb = bet.betVerb;
+    newBet.createdAt = [NSDate date];
+    newBet.endDate = bet.endDate;
+    newBet.opponentStakeAmount = bet.opponentStakeAmount;
+    newBet.opponentStakeType = bet.opponentStakeType;
+    newBet.ownStakeAmount = bet.ownStakeAmount;
+    newBet.ownStakeType = bet.ownStakeType;
+    // FBProfilePictureView setups
+    if (FBSession.activeSession.isOpen) {
+        // Current User's image
+        [[FBRequest requestForMe] startWithCompletionHandler:
+         ^(FBRequestConnection *connection,
+           NSDictionary<FBGraphUser> *user,
+           NSError *error) {
+             if (!error) {
+                 newBet.owner 
+             }
+         }];
+    }
+    newBet.owner;
+    
+    NSError *error;
+    if (![self.managedObjectContext save:&error]) {
+        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Uh oh..."
+                                                        message:@"The bet is invalid. Go back and fix it."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    } else {
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
 }
 
 @end

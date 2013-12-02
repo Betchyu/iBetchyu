@@ -21,6 +21,7 @@
 @property (nonatomic, retain) NSString * opponentStakeType;
 @property (nonatomic, retain) NSNumber * ownStakeAmount;
 @property (nonatomic, retain) NSString * ownStakeType;
-@property (nonatomic, retain) NSManagedObject *owner;
+@property (nonatomic, retain) NSString *owner;
+@property (nonatomic, retain) NSString *opponent;
 
 @end
